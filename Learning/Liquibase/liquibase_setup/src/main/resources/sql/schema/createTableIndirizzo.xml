@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog 
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+        http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd">
+    
+    <changeSet  id="2"  author="eti">  
+        <createTable  tableName="PROVA_INDIRIZZO">  
+            <column  name="ID"  type="NUMBER"  autoIncrement="false">  
+                <constraints  primaryKey="true"  nullable="false"/>  
+            </column> 
+            <column  name="ID_ANAGRAFICA"  type="NUMBER"  autoIncrement="false">  
+                <constraints    nullable="false"/>  
+            </column> 
+            <column  name="ADDRESS"  type="varchar(100)">  
+                <constraints  nullable="false"/>  
+            </column> 
+        </createTable>  
+    </changeSet>
+    <changeSet id ="3" author="eti">
+        <addForeignKeyConstraint 
+            baseTableName="PROVA_INDIRIZZO" 
+            baseColumnNames="ID_ANAGRAFICA"
+            constraintName="fk_Id_anagrafica_prova_indirizzo"
+            onDelete="CASCADE"
+            referencedTableName="PROVA_ANAGRAFICA"
+            referencedColumnNames="ID" />
+    </changeSet>
+</databaseChangeLog>
+
+

@@ -1,0 +1,9 @@
+com\example\dropwizard_first_setup\first_projectApplication.class
+com\example\dropwizard_first_setup\api\Anagrafica.class
+com\example\dropwizard_first_setup\api\IndirizzoAnagrafica.class
+com\example\dropwizard_first_setup\api\Sender.class
+com\example\dropwizard_first_setup\health\TemplateHealthCheck.class
+com\example\dropwizard_first_setup\first_projectConfiguration.class
+com\example\dropwizard_first_setup\resources\RabbitResource.class
+com\example\dropwizard_first_setup\resources\first_projectResources.class
+com\example\dropwizard_first_setup\db\MyDAO.class
