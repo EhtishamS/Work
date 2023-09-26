@@ -8,6 +8,6 @@
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
         http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd">
     
-    <includeAll path="C:/TirocinioAbaco/Learning/Liquibase/liquibase_setup/src/main/resources/sql/schema/"/>
+    <includeAll path="src/main/resources/sql/schema/"/>
 </databaseChangeLog>
 

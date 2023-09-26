@@ -1,0 +1,7 @@
+com\example\dropwizard_first_setup\first_projectApplication.class
+com\example\dropwizard_first_setup\api\MultipleDemetraAdoption.class
+com\example\dropwizard_first_setup\api\DemetraAdoption.class
+com\example\dropwizard_first_setup\health\TemplateHealthCheck.class
+com\example\dropwizard_first_setup\first_projectConfiguration.class
+com\example\dropwizard_first_setup\resources\first_projectResources.class
+com\example\dropwizard_first_setup\db\MyDAO.class
